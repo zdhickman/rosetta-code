@@ -1,5 +1,14 @@
 #lang racket
 
+#| USAGE:
+
+- Load your picture in the constant PICTURE
+- Run the program, from command line or Drracket
+- Click a pixel in the picture to output the color to the command line
+  + Outputs in the format (color -red -green -blue -alpha)
+  
+|#
+
 (require 2htdp/universe 2htdp/image picturing-programs)
 
 (define PICTURE pic:hacker)
