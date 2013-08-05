@@ -15,7 +15,6 @@
 (define PICTURE pic:hacker)
 (define HEIGHT (image-height PICTURE))
 (define WIDTH  (image-width  PICTURE))
-(define NEW-LINE "\n")
 
 (define (color->string c)
   (format "(color ~a ~a ~a ~a)" (color-red c) (color-green c)
@@ -23,8 +22,7 @@
 
 (define (do-color w x y k)
   (define g (get-pixel-color x y PICTURE))
-  (when (mouse=? "button-down" k) 
-    (printf (string-append (color->string g) NEW-LINE)))
+  (when (mouse=? "button-down" k) (displayln (color->string g)))
   g)
 
 (big-bang (color 255 255 255 0)
