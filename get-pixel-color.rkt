@@ -6,6 +6,7 @@
 - Run the program, from command line or Drracket
 - Click a pixel in the picture to output the color to the command line
   + Outputs in the format (color -red -green -blue -alpha)
+- Color is also constantly saved as the world state
   
 |#
 
